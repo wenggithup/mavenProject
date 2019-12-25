@@ -4,10 +4,8 @@ import banyuan.com.JDBC.Mvc.dao.Impl.UserDaoImpl;
 import banyuan.com.JDBC.Mvc.dao.UserDao;
 import banyuan.com.JDBC.Mvc.pojo.User;
 import banyuan.com.JDBC.Mvc.service.UserService;
-import banyuan.com.JDBC.Mvc.util.DButil;
+import banyuan.com.JDBC.Mvc.util.DbUtil;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.Savepoint;
 
@@ -66,26 +64,28 @@ public class UserServiceImpl implements UserService {
         Savepoint A = null;
         Savepoint B = null;
         try {
-            DButil.con.setAutoCommit(false);//事物处理必须同一个连接
-            A = DButil.con.setSavepoint("A");
+            DbUtil.con.setAutoCommit(false); //事物处理必须同一个连接
+            A = DbUtil.con.setSavepoint("A");
+            System.out.println(A.getSavepointName());
             userDao.updateMoney(name, -money);
-            B = DButil.con.setSavepoint("B");
+            B = DbUtil.con.setSavepoint("B");
+            System.out.println(B.getSavepointName());
             userDao.updateMoney(uname, money);
+
             System.out.println(1 / 0);
 
-            DButil.con.commit();
+            DbUtil.con.commit();
         } catch (Exception e) {
             try {
-                DButil.con.rollback(A);
-                DButil.con.commit();
+                DbUtil.con.rollback(A);
+                DbUtil.con.commit();
             } catch (SQLException ex) {
                 ex.printStackTrace();
             }
 
-            } finally {
-                DButil.closeDb();
-            }
-
+        }finally {
+            DbUtil.closeDb();
+        }
         }
     }
 

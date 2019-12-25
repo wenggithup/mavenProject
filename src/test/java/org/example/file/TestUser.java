@@ -10,7 +10,7 @@ public class TestUser {
     public static void main(String[] args) throws SQLException {
 //        User user=new User(7,"钱老三1",15);
 //        User user2=new User(8,"钱老三2",16);
-//        User user3=new User(9,"钱老三3",17);
+//        User user3=new User(9,"钱老三3",17);/*
 //        User user4=new User(10,"钱老三4",18);
 //        User user5=new User(11,"钱老三5",19);
 //        User user6=new User(12,"钱老三6",20);
