@@ -19,8 +19,8 @@ public class DbUtil {
        String user = "root";
        String password = "";
        try {
-           Class.forName(driver);
-           con=DriverManager.getConnection(url,user,password);
+           Class.forName(driver);//加载驱动
+           con=DriverManager.getConnection(url,user,password);//获取数据库连接
        } catch (ClassNotFoundException | SQLException e) {
            e.printStackTrace();
        }

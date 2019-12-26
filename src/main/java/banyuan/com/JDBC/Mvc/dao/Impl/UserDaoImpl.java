@@ -2,6 +2,7 @@ package banyuan.com.JDBC.Mvc.dao.Impl;
 
 import banyuan.com.JDBC.Mvc.dao.UserDao;
 import banyuan.com.JDBC.Mvc.pojo.User;
+import banyuan.com.JDBC.Mvc.service.UserService;
 import banyuan.com.JDBC.Mvc.util.DbUtil;
 
 import java.sql.Connection;

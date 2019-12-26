@@ -4,7 +4,7 @@ import apple.laf.JRSUIUtils;
 
 import java.util.*;
 
-public class main {
+public class useCirculation {
     public static void main(String[] args) throws InterruptedException {
         String []numeber={"3","4","5","6","7","8","9","10","J","Q","K","A","2"};
         String []colors={"♥️","♦️","♠️","♣️"};
