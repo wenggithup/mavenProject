@@ -1,6 +1,4 @@
-package banyuan.com.Genericity.HomeWork;
-
-import java.util.HashMap;
+package banyuan.com.Genericity.HomeWork.Dao;
 
 public class TestDao {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package banyuan.com.Genericity.Number;
+package banyuan.com.Genericity.HomeWork.Number;
 
 public class Num <T extends Number> {
     private T [] array;
