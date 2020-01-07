@@ -7,8 +7,8 @@ public class TestCase1 {
         case1 c=new PersonCase1Impl();
         Case1Proxy cp=new Case1Proxy(c);
         //映射接口，用接口对象来接收，参数，classload，接口地址，映射对象
+
        case1 ob= (case1)Proxy.newProxyInstance(c.getClass().getClassLoader(),c.getClass().getInterfaces(),cp);
         ob.submit("张三");
-
     }
 }

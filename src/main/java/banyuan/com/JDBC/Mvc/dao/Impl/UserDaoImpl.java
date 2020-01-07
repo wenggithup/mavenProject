@@ -11,10 +11,12 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
 
-public class UserDaoImpl implements UserDao {
+public  class UserDaoImpl implements UserDao{
     Connection con=null;
     PreparedStatement ps;
     List list;
+
+
 //    @Override
 //    public void insertUser(User user) {
 //    String sql="insert into user (uid,uname,uage) values (?,?,?)";
