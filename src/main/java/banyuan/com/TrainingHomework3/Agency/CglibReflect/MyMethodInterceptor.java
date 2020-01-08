@@ -1,4 +1,4 @@
-package banyuan.com.Reflect.CglibReflect;
+package banyuan.com.TrainingHomework3.Agency.CglibReflect;
 
 import net.sf.cglib.proxy.MethodInterceptor;
 import net.sf.cglib.proxy.MethodProxy;

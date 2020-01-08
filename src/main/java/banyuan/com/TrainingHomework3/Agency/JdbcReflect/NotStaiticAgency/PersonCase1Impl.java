@@ -1,4 +1,4 @@
-package banyuan.com.Reflect.JdbcReflect.NotStaiticAgency;
+package banyuan.com.TrainingHomework3.Agency.JdbcReflect.NotStaiticAgency;
 
 public class PersonCase1Impl implements case1 {
     @Override

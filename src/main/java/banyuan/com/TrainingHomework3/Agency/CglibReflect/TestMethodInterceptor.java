@@ -1,5 +1,7 @@
-package banyuan.com.Reflect.CglibReflect;
+package banyuan.com.TrainingHomework3.Agency.CglibReflect;
 
+import banyuan.com.TrainingHomework3.Agency.CglibReflect.Dog;
+import banyuan.com.TrainingHomework3.Agency.CglibReflect.MyMethodInterceptor;
 import net.sf.cglib.proxy.Enhancer;
 
 public class TestMethodInterceptor {
@@ -11,7 +13,7 @@ public class TestMethodInterceptor {
         enhancer.setCallback(new MyMethodInterceptor());
         //Dog对象接收
         Dog dog= (Dog)enhancer.create();
-        dog.eat("💩");
+        dog.eat("狗粮");
         dog.run();
 
     }

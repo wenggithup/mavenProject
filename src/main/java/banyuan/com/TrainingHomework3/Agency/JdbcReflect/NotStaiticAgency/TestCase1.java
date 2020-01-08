@@ -1,4 +1,4 @@
-package banyuan.com.Reflect.JdbcReflect.NotStaiticAgency;
+package banyuan.com.TrainingHomework3.Agency.JdbcReflect.NotStaiticAgency;
 
 import java.lang.reflect.Proxy;
 

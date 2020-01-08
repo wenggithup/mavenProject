@@ -1,4 +1,4 @@
-package banyuan.com.Reflect.JdbcReflect.StaticAgency;
+package banyuan.com.TrainingHomework3.Agency.JdbcReflect.StaticAgency;
 
 public class PersonCar implements Person {
     int money=50000000;
