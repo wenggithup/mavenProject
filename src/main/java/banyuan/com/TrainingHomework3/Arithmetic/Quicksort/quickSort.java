@@ -17,11 +17,6 @@ public class quickSort {
             System.out.print(integer+" ");
 
         }
-        String s1=new String("你好");
-        String s2=s1;
-        System.out.println(s1.hashCode()+" "+s2.hashCode());
-        System.out.println(s1==s2);
-
 
     }
 
