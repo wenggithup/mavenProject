@@ -1,0 +1,34 @@
+package banyuan.com.TrainingHomework4.SqlTransaction;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+/**
+ * @author edz
+ */
+public class DbUtil {
+   public  static Connection con = null;
+
+   static {
+       String driver = "com.mysql.jdbc.Driver";
+       String url = "jdbc:mysql://localhost:3306/weng?useSSL=false";
+       String user = "root";
+       String password = "";
+       try {
+           Class.forName(driver);//加载驱动
+           con=DriverManager.getConnection(url,user,password);//获取数据库连接
+       } catch (ClassNotFoundException | SQLException e) {
+           e.printStackTrace();
+       }
+   }
+
+    public static void closeDb(){
+        try {
+            con.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+}
